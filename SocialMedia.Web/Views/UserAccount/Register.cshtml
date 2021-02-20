@@ -1,0 +1,93 @@
+﻿@model SocialMedia.Entity.User.Register
+@{
+    ViewBag.Title = "Üye Olmak İçin Formu Doldurunuz.";
+    TempData["title"] = "* ile gösterilen alanlar zorunludur.";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section id="aa-catg-head-banner">
+    <img src="~/Content/temp/web/img/fashion/fashion-header-bg-8.jpg" alt="banner" title="provechoo.com" style="max-height:350px;max-width:1400px;min-height:350px;min-width:1400px">
+    <div class="aa-catg-head-banner-area">
+        <div class="container">
+            <div class="aa-catg-head-banner-content">
+                @if (TempData["err"] != null)
+                {
+                    <h2>@TempData["err"]</h2>
+                }
+                @if (TempData["msg"] != null)
+                {
+                    <h2>@TempData["msg"]</h2>
+                }
+                @if (TempData["err"] == null && TempData["msg"] == null)
+                {
+                    <h2>@ViewBag.Title</h2>
+                }
+                <ol class="breadcrumb">
+                    <li><a href="~/Home/Index">Anasayfa</a></li>
+                    @if (TempData["err"] != null)
+                    {
+                        <li class="active">@TempData["err"]</li>
+                    }
+                    @if (TempData["msg"] != null)
+                    {
+                        <li class="active">@TempData["msg"]</li>
+                    }
+                    @if (TempData["err"] == null && TempData["msg"] == null)
+                    {
+                        <li class="active">@ViewBag.Title</li>
+                    }
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="aa-myaccount">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-myaccount-area">
+                    <div class="row">
+                        <a href="~/UserAccount/Login" class="btn btn-primary">Zaten Üye Misiniz? Hemen Giriş Yapın ya da</a>
+                        <div class="col-md-10">
+                            <div class="aa-myaccount-register">
+                                <h4>@ViewBag.Title</h4>
+                                <h5 style="color:darkred">@TempData["title"]</h5>
+                                <form action="" class="aa-login-form" method="post">
+                                    @using (Html.BeginForm("Register", "UserAccount", FormMethod.Post))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <label for="">Kullanıcı Adınız<span>*</span></label>
+                                        <input type="text" name="Username" placeholder="kullanıcı adınız">
+                                        <label for="">Adınız-Soyadınız<span>*</span></label>
+                                        <input type="text" name="NameSurname" placeholder="adınız-soyadınız">                                       
+                                        <label for="">Doğum Tarihiniz<span>*</span></label><br />
+                                        <input type="date" name="Birthdate"><br />                                       
+                                        <label for="">E-Mail Adresiniz<span>*</span></label><br />
+                                        <input type="email" name="Email" placeholder="e-mail adresiniz"><br />
+                                        <label for="">Şifreniz<span>*</span></label>
+                                        <input type="password" name="Password" placeholder="şifreniz">
+                                        <label for="">Şifrenizi Onaylayınız<span>*</span></label>
+                                        <input type="password" name="ConfirmPassword" placeholder="şifrenizi onaylayınız">
+
+                                        <button type="submit" class="aa-browse-btn">Üye Ol</button>
+                                    }
+                                </form>
+                            </div>
+                            <div class="row">
+                                <span>
+                                    <a href="~/Home/UserArgeement" class="btn btn-link" target="_blank">Kullanıcı Sözleşmesi</a>
+                                </span>
+                                <span>
+                                    <a href="~/Home/SecurityAndCookie" class="btn btn-link" target="_blank">Gizlilik ve Cookie Politikamız</a>
+                                </span>
+                                <span>
+                                    <a href="~/Home/KVKH" class="btn btn-link" target="_blank">Kişisel Verileriniz ve Onları İşlenmesi</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

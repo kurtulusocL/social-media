@@ -1,0 +1,39 @@
+﻿@model SocialMedia.Entity.User.Login
+@{
+    ViewBag.Title = "Lütfen Giriş Yapın";
+    Layout = "";
+}
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4>@ViewBag.Title</h4>
+                    @Html.ValidationSummary()
+                    @using (Html.BeginForm("Login", "UserAccount", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post))
+                    {
+                        <form class="aa-login-form" action="" method="post">
+                            @Html.AntiForgeryToken()
+                            <label for="">Kullanıcı Adınız<span>*</span></label>
+                            <input type="text" name="Username" placeholder="kullanıcı adınız">
+                            <p></p>
+                            <label for="">Şifreniz<span>*</span></label>
+                            <br />
+                            <input type="password" name="Password" placeholder="şifreniz">
+                            <br /><br />
+                            <label for="rememberme" class="rememberme"><input type="checkbox" name="RememberMe" id="rememberme"> Beni Hatırla </label>
+                            <p></p>
+                            <button class="aa-browse-btn" type="submit">Giriş Yap</button>
+                            <p></p>
+                            <p class="aa-lost-password"><a href="~/UserAccount/ForgotPassword">Şifrenizi Mi Unuttunuz?</a></p>
+                            <div class="aa-register-now">
+                                Henüz Üye Olmadınız Mı?<a href="~/UserAccount/Register">Şimdi Üye Ol!</a>
+                            </div>
+                        </form>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>

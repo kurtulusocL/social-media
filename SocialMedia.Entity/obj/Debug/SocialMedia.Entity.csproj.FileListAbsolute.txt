@@ -1,0 +1,16 @@
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\bin\Debug\SocialMedia.Entity.dll.config
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\bin\Debug\SocialMedia.Entity.dll
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\bin\Debug\SocialMedia.Entity.pdb
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\bin\Debug\EntityFramework.dll
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\bin\Debug\EntityFramework.xml
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\obj\Debug\SocialMedia.Entity.csprojAssemblyReference.cache
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\obj\Debug\SocialMedia.Entity.csproj.CoreCompileInputs.cache
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\obj\Debug\SocialMedia.Entity.csproj.CopyComplete
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\obj\Debug\SocialMedia.Entity.dll
+C:\Users\kurtulusocL\Documents\codeProject\Mvc\MvcProject\#Finishing\SocialMedia\SocialMedia.Entity\obj\Debug\SocialMedia.Entity.pdb
